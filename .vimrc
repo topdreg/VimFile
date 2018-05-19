@@ -12,3 +12,4 @@ set hidden
 nnoremap <Tab> :bnext<CR>
 nnoremap <S-Tab> :bprevious<CR>
 nnoremap <Leader>q :Bdelete<CR>
+nnoremap <Leader>t :NERDTree<CR>
