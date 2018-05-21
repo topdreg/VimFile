@@ -1,4 +1,4 @@
-call pathogen#infect()
+execute pathogen#infect()
 syntax on
 filetype plugin indent on
 colorscheme jellybeans
@@ -18,11 +18,11 @@ nnoremap <S-Tab> :bprevious<CR>
 nnoremap <Leader>q :Bdelete<CR>
 nnoremap <Leader>Q :Bdelete!<CR>
 nnoremap <Leader>t :NERDTree<CR>
+nnoremap <C-p> :Files<CR>
 
 let g:airline_powerline_fonts = 1
 
-" Syntastic stuff.
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
+let g:airline#extensions#ale#enabled = 1
+
+"FZF
+set rtp+=~/.fzf
